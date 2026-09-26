@@ -62,7 +62,7 @@ export const experiences = [
   },
 ];
 
-export const partners = ["AWS Academy", "Cisco", "Fortinet", "Google", "Huawei"];
+export const partners = ["AWS Academy", "Cisco", "Fortinet", "Huawei"];
 
 export const stories = [
   {
