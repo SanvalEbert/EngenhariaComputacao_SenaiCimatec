@@ -32,37 +32,43 @@ export const ecosystem = [
 export const experiences = [
   {
     title: "Clube de Programação",
-    text: "Uma das iniciativas estudantis de maior tradição do curso, conectando prática, comunidade e competições.",
+    text: "Uma das iniciativas estudantis de maior tradição do curso, conectando prática, comunidade, OBI, maratonas e eventos.",
     tag: "Comunidade",
+    slug: "clube-de-programacao",
   },
   {
     title: "AWS Student Builder Group",
-    text: "Comunidade estudantil voltada à computação em nuvem, aprendizagem entre pares e construção de projetos.",
+    text: "Comunidade estudantil voltada à computação em nuvem, aprendizagem entre pares, certificações e conexão com builders.",
     tag: "Cloud",
+    slug: "aws-student-builder-group",
   },
   {
     title: "IEEE RAS",
-    text: "Robótica conectada à inovação, projetos e desenvolvimento de competências técnicas em comunidade.",
+    text: "Robótica conectada à inovação, automação, visão computacional, IA e desenvolvimento de competências técnicas em comunidade.",
     tag: "Robótica",
+    slug: "ieee-ras",
   },
   {
     title: "CIMATEC Jr",
-    text: "Experiência empreendedora que aproxima estudantes de projetos, clientes e desafios reais.",
+    text: "Experiência empreendedora que aproxima estudantes de projetos, clientes, equipes multidisciplinares e desafios reais.",
     tag: "Empreendedorismo",
+    slug: "cimatec-jr",
   },
   {
     title: "Hackathons e competições",
     text: "Desafios que transformam conhecimento em protótipos, soluções e resultados apresentados além da sala de aula.",
     tag: "Desafios",
+    slug: "clube-de-programacao",
   },
   {
     title: "Eventos científicos",
     text: "Participação e organização de eventos que aproximam formação, pesquisa, inovação, academia e indústria.",
     tag: "Pesquisa",
+    slug: "hiive-lab",
   },
 ];
 
-export const partners = ["AWS Academy", "Cisco", "Fortinet", "Google", "Huawei"];
+export const partners = ["AWS Academy", "Cisco", "Fortinet", "Huawei"];
 
 export const stories = [
   {
