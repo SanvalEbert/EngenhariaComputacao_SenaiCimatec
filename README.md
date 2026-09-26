@@ -6,7 +6,7 @@ Portal narrativo da Engenharia de Computação do SENAI CIMATEC na perspectiva d
 
 Complementar o site institucional com uma experiência voltada a apresentações, histórias do curso, resultados, iniciativas estudantis, parcerias, internacionalização e possibilidades de carreira.
 
-## Estrutura da V1
+## Estrutura
 
 - Ecossistema SENAI CIMATEC
 - Identidade da Engenharia de Computação
@@ -19,6 +19,10 @@ Complementar o site institucional com uma experiência voltada a apresentações
 - Possibilidades de carreira
 - Modo apresentação
 
+## V2 editorial — checkpoint
+
+A segunda etapa transforma os cards de experiências em conteúdos navegáveis. Já foram estruturadas páginas para Clube de Programação, AWS Student Builder Group, IEEE RAS CIMATEC, CIMATEC Jr, HIIVE LAB e Internacionalização. A área de parceiros foi corrigida para AWS Academy, Cisco, Fortinet e Huawei. O acervo de imagens e as logomarcas dos parceiros serão incorporados na próxima passada visual.
+
 ## Desenvolvimento local
 
 ```bash
@@ -30,4 +34,4 @@ Acesse `http://localhost:3000`.
 
 ## Observação
 
-Esta é uma primeira versão de trabalho. Conteúdos, links oficiais, imagens, dados de mercado e histórias serão refinados progressivamente a partir dos materiais da coordenação e das fontes institucionais.
+O portal é um produto em evolução contínua. Conteúdos, links oficiais, imagens, indicadores e histórias são refinados progressivamente a partir dos materiais da coordenação e de fontes institucionais.
