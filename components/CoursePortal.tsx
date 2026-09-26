@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
   careers,
@@ -99,19 +100,22 @@ export default function CoursePortal() {
       </section>
 
       <section id="experiencias" className="section experiences-section">
-        <div className="section-head"><span>04 · Muito além da sala</span><h2>A Engenharia acontece quando o estudante participa.</h2><p>Comunidades, competições, projetos, pesquisa e extensão ampliam a experiência acadêmica e o desenvolvimento profissional.</p></div>
-        <div className="experience-grid">{experiences.map((item) => <article className="experience-card" key={item.title}><span>{item.tag}</span><h3>{item.title}</h3><p>{item.text}</p><b>Explorar iniciativa →</b></article>)}</div>
+        <div className="section-head"><span>04 · Muito além da sala</span><h2>A Engenharia acontece quando o estudante participa.</h2><p>Agora cada iniciativa passa a ter memória própria: contexto, imagens, resultados e histórias que podem crescer ao longo do tempo.</p></div>
+        <div className="experience-grid">{experiences.map((item) => <Link className="experience-card" href={`/conteudos/${item.slug}/`} key={`${item.title}-${item.slug}`}><span>{item.tag}</span><h3>{item.title}</h3><p>{item.text}</p><b>Explorar iniciativa →</b></Link>)}</div>
       </section>
 
       <section id="conexoes" className="section connections-section">
         <div className="section-head"><span>05 · Conexões</span><h2>Um ecossistema conectado à tecnologia e ao mundo.</h2><p>Academias, empresas, ambientes de pesquisa e oportunidades internacionais ampliam o espaço de aprendizagem.</p></div>
         <div className="partner-row">{partners.map((partner) => <div key={partner}>{partner}</div>)}</div>
-        <div className="connection-panels"><article><span>Infraestrutura & pesquisa</span><h3>Ideias que ganham ambiente para virar experimento.</h3><p>Laboratórios, servidores, redes, software e espaços de pesquisa apoiam desenvolvimento, testes e projetos.</p><strong>HIIVE LAB · Computação imersiva · Pesquisa aplicada</strong></article><article><span>Internacionalização</span><h3>Formação que pode atravessar fronteiras.</h3><p>O curso reúne histórias de estudantes em experiências internacionais, pesquisa aplicada e intercâmbios.</p><strong>Alemanha · BRAACHEN · Fraunhofer IPK</strong></article></div>
+        <div className="connection-panels">
+          <Link href="/conteudos/hiive-lab/"><span>Infraestrutura & pesquisa</span><h3>HIIVE LAB: onde imersão, pesquisa e indústria se encontram.</h3><p>Realidade Virtual e Imersiva, produção científica, formação, inovação e colaboração internacional.</p><strong>Conhecer o laboratório →</strong></Link>
+          <Link href="/conteudos/internacionalizacao/"><span>Internacionalização</span><h3>Formação que pode atravessar fronteiras.</h3><p>Histórias de mobilidade acadêmica, pesquisa aplicada e experiências em ambientes internacionais.</p><strong>Alemanha · BRAACHEN · Fraunhofer →</strong></Link>
+        </div>
       </section>
 
       <section id="historias" className="section stories-section">
         <div className="section-head"><span>06 · Histórias da Engenharia</span><h2>O site cresce junto com o curso.</h2><p>Resultados, projetos, pessoas e conquistas passam a compor uma memória digital viva da Engenharia de Computação.</p></div>
-        <div className="stories-grid">{stories.map((story, index) => <article key={story.title} className={index === 0 ? "featured" : ""}><span>{story.kicker}</span><h3>{story.title}</h3><p>{story.text}</p><a href="#">Conhecer a história →</a></article>)}</div>
+        <div className="stories-grid">{stories.map((story, index) => <article key={story.title} className={index === 0 ? "featured" : ""}><span>{story.kicker}</span><h3>{story.title}</h3><p>{story.text}</p><a href="#experiencias">Conhecer a história →</a></article>)}</div>
       </section>
 
       <section id="carreiras" className="section careers-section">
