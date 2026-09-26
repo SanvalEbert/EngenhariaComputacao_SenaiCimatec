@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./rich.css";
 
 export const metadata: Metadata = {
   title: "Engenharia de Computação | SENAI CIMATEC",
