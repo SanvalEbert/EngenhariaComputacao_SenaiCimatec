@@ -30,8 +30,11 @@ export default async function EditorialPage({ params }: { params: Promise<{ slug
             <p>{page.intro}</p>
             {page.chips && <div className="detail-chips">{page.chips.map((chip) => <span key={chip}>{chip}</span>)}</div>}
           </div>
-          <figure className="detail-figure">
-            <img src={`../../media/${page.heroImage}`} alt={page.imageAlt} />
+          <figure className="detail-figure detail-visual" aria-label={page.imageAlt}>
+            <div className="detail-visual-grid" aria-hidden="true" />
+            <span>{page.tag}</span>
+            <strong>{page.title}</strong>
+            <small>Acervo visual do curso em integração</small>
           </figure>
         </section>
 
